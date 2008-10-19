@@ -1,0 +1,18 @@
+h1. XulUnit A simple test framework for Firefox Extension Development
+
+Gamelayers is the creator of PMOG a massively multiplayer online game, played through a custom 
+Firefox extension. The Gamelayers' team is a Test Driven Development team and as such expected 
+to write unit tests for their extensions. However, after not finding an existing test framework
+suitable for testing extensions from within the Firefox environment Gamelayers decided to write
+their own. 
+
+In the spirt of "scratch your own itch", we are happy to release the XulUnit framework for testing
+Firefox extension using only Javascript. 
+
+XulUnit is based on the excellent Javascript test unit framework QUnit, which was written for JQuery.
+We extended their framework in a couple of ways:
+
+ 1. We changed the runtime environment to render to a XUL window, embedded directly inside the Firefox window.
+ 2. We added support for pending tests, which display in the test results but don't count as a pass or failure.
+ 3. We included an example of a mocking library that can be used as fixtures or to stub our components of the Firefox application.
+
